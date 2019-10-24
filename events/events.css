@@ -3,6 +3,11 @@
     margin-top: 0;
 }
 
+.past-events-heading {
+    font-size: 45px;
+    margin-top: 0;
+}
+
 .events-container {
     display: flex;
     flex-direction: column;
@@ -42,3 +47,7 @@
         display: none;
     }
 }
+
+.mySlides {display:none;}
+
+

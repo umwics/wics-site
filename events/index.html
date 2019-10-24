@@ -4,6 +4,7 @@ title: Events
 description: WICS events
 ---
 
+
 <link rel="stylesheet" type="text/css" href="events.css">
 
 <div class="events-container">
@@ -16,4 +17,39 @@ description: WICS events
     <div class="calendar calendar-small">
         <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uofmwics%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FWinnipeg" style="border-width:0" width="80%" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
+    <h2 class="past-events-heading"><b>Past Events Gallery</b></h2>
+    <img src="img/IQMetrixMM/01iqmetrixMMGroup.jpg" alt="IQMetrix Mentor Mingle" >
+    <img src="img/BoldMM/01boldMM.jpg" alt="Bold Mentor Mingle" >
+
+    <div class="imageSlideshow">
+            <img class="mySlides" src="img/BoldMM/01boldMM.jpg" style="width:100%">
+            <img class="mySlides" src="img/BoldMM/02boldMM.jpg" style="width:100%">
+            <img class="mySlides" src="img/BoldMM/03boldMM.jpg" style="width:100%">
+            <img class="mySlides" src="img/BoldMM/04boldMM.jpg" style="width:100%">
+          
+            <button class="button--left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
 </div>
+
