@@ -15,9 +15,12 @@ body {
 }
 
 .title{
-    font-size: 45px;
-    margin-bottom:20px;
     text-align: center;
+}
+
+span.title{
+    font-size: 45px;
+    /*background-color: rgba(23, 216, 255, 0.568);*/
 }
 /* carousel */
 .carousel-cell {
@@ -232,8 +235,7 @@ body {
 /* Page titles */
 
 .title {
-    text-align: center; 
-    margin-bottom: 1em;
+    text-align: center;
     font-size: 3.5em;
 }
 
